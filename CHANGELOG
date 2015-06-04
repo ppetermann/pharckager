@@ -3,6 +3,8 @@ VERSION 0  TEST-RELEASE
 =======================
 
    Version 0.0 - test-release
+      04/06/2015 20:39  0.0.3  improved help
+         80c5621 better help
       04/06/2015 19:07  0.0.2  self-update capability
          d79009e read version from versioned file
          3f9693f added self-update capability
