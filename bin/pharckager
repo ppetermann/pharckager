@@ -1,0 +1,13 @@
+<?php
+require_once __DIR__ ."/../vendor/autoload.php";
+
+/** @var \King23\DI\DependencyContainer $container */
+$container = require_once __DIR__ ."/../config/services.php";
+
+/** @var \Knight23\Core\Knight23 $knight23 */
+$knight23 = $container->getInstanceOf(\Knight23\Core\RunnerInterface::class);
+
+// add build command
+$knight23->addCommand(\Pharckager\Commands\BuildCommand::class);
+
+$knight23->run($argc, $argv);
