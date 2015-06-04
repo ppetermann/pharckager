@@ -21,7 +21,7 @@ class BuildCommand extends \Knight23\Core\Command\BaseCommand
     {
         $this->setName("build");
         $this->setShort("build a specific package");
-        $this->addArgument('path', ' to build from');
+        $this->addArgument('path/packagename', 'to build from (example: . for currenct directory, devedge/pharckager for pharckager..)');
 
         $this->output = $output;
         $this->banner = $banner;

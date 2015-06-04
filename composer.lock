@@ -260,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/knight23.git",
-                "reference": "346ccb59dca3f36087bcb5ec43bb822f3d7fc792"
+                "reference": "bde664ddeee7ddf7107c7c8a09246e622c46680a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/knight23/zipball/346ccb59dca3f36087bcb5ec43bb822f3d7fc792",
-                "reference": "346ccb59dca3f36087bcb5ec43bb822f3d7fc792",
+                "url": "https://api.github.com/repos/ppetermann/knight23/zipball/bde664ddeee7ddf7107c7c8a09246e622c46680a",
+                "reference": "bde664ddeee7ddf7107c7c8a09246e622c46680a",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +296,7 @@
                 }
             ],
             "description": "a toolset to build your own command line tools",
-            "time": "2015-06-04 15:41:13"
+            "time": "2015-06-04 18:35:30"
         },
         {
             "name": "padraic/humbug_get_contents",
