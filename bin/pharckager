@@ -9,5 +9,6 @@ $knight23 = $container->getInstanceOf(\Knight23\Core\RunnerInterface::class);
 
 // add build command
 $knight23->addCommand(\Pharckager\Commands\BuildCommand::class);
+$knight23->addCommand(\Pharckager\Commands\SelfUpdateCommand::class);
 
 $knight23->run($argc, $argv);

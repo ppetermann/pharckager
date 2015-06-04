@@ -15,7 +15,8 @@
         "knight23/core": "dev-master",
         "herrera-io/box": "~1.6.1",
         "symfony/finder": "~2.1",
-        "symfony/process": "~2.1"
+        "symfony/process": "~2.1",
+        "padraic/phar-updater": "~1.0"
     },
 
     "require-dev": {
