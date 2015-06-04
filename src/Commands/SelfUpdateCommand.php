@@ -35,7 +35,7 @@ class SelfUpdateCommand extends BaseCommand
         $updater->setStrategy(Updater::STRATEGY_GITHUB);
         $updater->getStrategy()->setPackageName('devedge/pharckager');
         $updater->getStrategy()->setPharName('pharckager.phar');
-        $updater->getStrategy()->setCurrentLocalVersion('0.0.0');
+        $updater->getStrategy()->setCurrentLocalVersion(\Pharckager\Pharckager::VERSION);
         try {
             if ($updater->update()) {
                 $this->output->writeln("<info>done!</info>");
