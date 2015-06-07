@@ -45,5 +45,12 @@ $container->register(
     }
 );
 
+// register the builder factory
+$container->register(
+    \Pharckager\Builder\BuilderFactoryInterface::class,
+    function () use ($container) {
+        return $container->getInstanceOf(\Pharckager\Builder\BuilderFactory::class);
+    }
+);
 
 return $container;
