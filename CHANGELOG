@@ -2,6 +2,11 @@
 VERSION 0  TEST-RELEASE
 =======================
 
+   Version 0.1 - own builder structure started
+      07/06/2015 18:44  0.1.0  initial release
+         e5e86ea moved building to basic builder, also exclude existing .phar files and vcs directories
+         103ea77 removing the phar-composer code, rebuilding own solution
+
    Version 0.0 - test-release
       04/06/2015 20:39  0.0.3  improved help
          80c5621 better help
