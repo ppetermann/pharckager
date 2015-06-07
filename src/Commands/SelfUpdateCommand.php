@@ -30,6 +30,7 @@ class SelfUpdateCommand extends BaseCommand
     public function run(array $options, array $arguments)
     {
         $this->output->writeln($this->banner->getBanner());
+        $this->output->writeln('');
 
         $updater = new Updater(null, false);
         $updater->setStrategy(Updater::STRATEGY_GITHUB);
@@ -38,7 +39,7 @@ class SelfUpdateCommand extends BaseCommand
         $updater->getStrategy()->setCurrentLocalVersion(\Pharckager\Pharckager::VERSION);
         try {
             if ($updater->update()) {
-                $this->output->writeln("<info>done!</info>");
+                $this->output->writeln("updated to <info>" . $updater->getNewVersion() . "</info>");
             } else {
                 $this->output->writeln("no update available");
             }
