@@ -3,6 +3,8 @@ VERSION 0  TEST-RELEASE
 =======================
 
    Version 0.1 - own builder structure started
+      07/06/2015 19:20  0.1.2  more informative about updates
+         4d43469 be a bit more informative about the update
       07/06/2015 19:10  0.1.1  fix so it finds scripts
          db69a28 find bin/script
       07/06/2015 18:44  0.1.0  initial release
