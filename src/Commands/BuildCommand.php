@@ -42,6 +42,7 @@ class BuildCommand extends \Knight23\Core\Command\BaseCommand
     public function run(array $options, array $arguments)
     {
         $this->output->writeln($this->banner->getBanner());
+        $this->output->writeln('');
 
         if (count($arguments) < 1) {
             $builder = $this->builderFactory->getBuilderFor('basic');
@@ -65,6 +66,9 @@ class BuildCommand extends \Knight23\Core\Command\BaseCommand
             }
         }
 
+        $script = $builder->getScript($path, $pharname);
+        $this->output->writeln('');
+        
         $this->output->writeln("creating <info>$pharname</info> with contents from <info>$path</info>");
 
         $box = Box::create($pharname);
@@ -76,7 +80,7 @@ class BuildCommand extends \Knight23\Core\Command\BaseCommand
 
         $box->getPhar()->setStub(
             StubGenerator::create()
-                ->index('bin/pharckager')
+                ->index($script)
                 ->generate()
         );
 
