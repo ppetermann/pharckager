@@ -5,5 +5,5 @@ use Knight23\Core\Knight23;
 
 class Pharckager extends Knight23
 {
-    const VERSION="0.1.2";
+    const VERSION="0.1.3";
 }
